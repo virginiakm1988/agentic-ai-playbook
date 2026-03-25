@@ -116,38 +116,37 @@ Foundation: Lab 0 --> Lab 1 --> Lab 2 --> Lab 3 --> Lab 4 --> Lab 5
 
 | Lab | Description | Open |
 |-----|-------------|------|
-| Lab 0 | Agent Prototype — build from scratch | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/foundation/Lab0_Agent_Prototype.ipynb) |
-| Lab 1 | Anatomy of a Decision — prompt structure | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/foundation/Lab1_Anatomy_of_a_Decision.ipynb) |
-| Lab 2 | Contract of a Tool — Pydantic schemas | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/foundation/Lab2_Contract_of_a_Tool.ipynb) |
-| Lab 3 | Persistent Agent — memory and state | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/foundation/Lab3_Persistent_Agent.ipynb) |
-| Lab 4 | Graphs, Cycles & Recovery — LangGraph | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/foundation/Lab4_Graphs_Cycles_Recovery.ipynb) |
-| Lab 5 | LLM-as-Judge — evaluation patterns | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/foundation/Lab5_LLM_as_Judge.ipynb) |
+| Lab 0 | Agent Prototype — build from scratch | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab0_Agent_Prototype.ipynb) |
+| Lab 1 | Anatomy of a Decision — prompt structure | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab1_Anatomy_of_a_Decision.ipynb) |
+| Lab 2 | Contract of a Tool — Pydantic schemas | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab2_Contract_of_a_Tool.ipynb) |
+| Lab 3 | Persistent Agent — memory and state | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab3_Persistent_Agent.ipynb) |
+| Lab 4 | Graphs, Cycles & Recovery — LangGraph | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab4_Graphs_Cycles_Recovery.ipynb) |
+| Lab 5 | LLM-as-Judge — evaluation patterns | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab5_LLM_as_Judge.ipynb) |
 
 ### EOP Domain
 
 | Lab | Description | Open |
 |-----|-------------|------|
-| EOP 1 | Evidence Chain Extraction | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/domains/eop/Lab_EOP1_Evidence_Chain_Extraction.ipynb) |
-| EOP 2 | Claim-contingent Disclosure | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/domains/eop/Lab_EOP2_Claim_Contingent_Disclosure.ipynb) |
-| EOP 3 | EOP Spokesperson | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/domains/eop/Lab_EOP3_EOP_Spokesperson.ipynb) |
+| EOP 1 | Evidence Chain Extraction | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_EOP1_Evidence_Chain_Extraction.ipynb) |
+| EOP 2 | Claim-contingent Disclosure | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_EOP2_Claim_Contingent_Disclosure.ipynb) |
+| EOP 3 | EOP Spokesperson | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_EOP3_EOP_Spokesperson.ipynb) |
 
 ### Healthcare Domain
 
 | Lab | Description | Open |
 |-----|-------------|------|
-| HC 1 | Clinical NLP Agent — extract from clinical notes | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/domains/healthcare/Lab_HC1_Clinical_NLP_Agent.ipynb) |
-| HC 2 | Medical Literature Agent — search and summarize | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/domains/healthcare/Lab_HC2_Medical_Literature_Agent.ipynb) |
-| HC 3 | Clinical Trial Assistant — protocol and eligibility | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/domains/healthcare/Lab_HC3_Clinical_Trial_Assistant.ipynb) |
+| HC 1 | Clinical NLP Agent — extract from clinical notes | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_HC1_Clinical_NLP_Agent.ipynb) |
+| HC 2 | Medical Literature Agent — search and summarize | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_HC2_Medical_Literature_Agent.ipynb) |
+| HC 3 | Clinical Trial Assistant — protocol and eligibility | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_HC3_Clinical_Trial_Assistant.ipynb) |
 
 ### Bioinformatics Domain
 
 | Lab | Description | Open |
 |-----|-------------|------|
-| BIO 1 | Sequence Analysis Agent — DNA/protein tools | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/domains/bioinformatics/Lab_BIO1_Sequence_Analysis_Agent.ipynb) |
-| BIO 2 | Variant Interpretation — genomic variant analysis | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/domains/bioinformatics/Lab_BIO2_Variant_Interpretation.ipynb) |
-| BIO 3 | Pathway Analysis Agent — gene ontology and pathways | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/agentic-ai-science-playbook/blob/main/domains/bioinformatics/Lab_BIO3_Pathway_Analysis_Agent.ipynb) |
+| BIO 1 | Sequence Analysis Agent — DNA/protein tools | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_BIO1_Sequence_Analysis_Agent.ipynb) |
+| BIO 2 | Variant Interpretation — genomic variant analysis | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_BIO2_Variant_Interpretation.ipynb) |
+| BIO 3 | Pathway Analysis Agent — gene ontology and pathways | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_BIO3_Pathway_Analysis_Agent.ipynb) |
 
-> **Note**: Replace `YOUR_USERNAME` with your GitHub username before publishing.
 
 ---
 
