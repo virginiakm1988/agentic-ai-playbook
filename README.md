@@ -1,19 +1,20 @@
 # Agentic AI Science Playbook
 
 > **A hands-on tutorial series for building domain-aware AI agents in scientific research**
-> Built on patterns from NVIDIA Research — covering environmental science, healthcare, and bioinformatics.
+> Built on patterns from NVIDIA Research — covering environmental science, healthcare, bioinformatics, and finance.
 
 ---
 
 ## What Is This Playbook?
 
-This playbook teaches you to build **production-quality AI agents** for scientific research. It is domain-agnostic at the foundation layer and then dives into three scientific domains:
+This playbook teaches you to build **production-quality AI agents** for scientific research. It starts with domain-agnostic foundation labs and then dives into four scientific domains:
 
 | Domain | Focus |
 |--------|-------|
 | **Evidence-Oriented Programming (EOP)** | Traceable research software for computational science |
 | **Healthcare** | Clinical NLP, medical literature, and trial assistance |
 | **Bioinformatics** | Sequence analysis, variant interpretation, pathway reasoning |
+| **Finance** | Portfolio analysis, risk metrics, and ESG evaluation |
 
 Whether you are a PhD student, research engineer, or scientist-turned-developer, the labs build from first principles (what is an LLM?) to production patterns (multi-step workflows, evaluation, and recovery).
 
@@ -22,33 +23,32 @@ Whether you are a PhD student, research engineer, or scientist-turned-developer,
 ## Repository Structure
 
 ```
-agentic-ai-science-playbook/
-├── README.md                         # This file
-├── GETTING_STARTED.md                # Setup guide: API keys, Colab, first run
-├── Glossary.md                       # All key terms defined
-├── requirements.txt                  # Python dependencies
-├── shared/
-│   └── agent_utils.py                # Shared client setup and helpers
-├── foundation/                       # Generic agentic skills (domain-agnostic)
-│   ├── Lab0_Agent_Prototype.ipynb        # Build a minimal agent from scratch
-│   ├── Lab1_Anatomy_of_a_Decision.ipynb  # Prompt structure and tool selection
-│   ├── Lab2_Contract_of_a_Tool.ipynb     # Pydantic schemas for tool calls
-│   ├── Lab3_Persistent_Agent.ipynb       # Memory and multi-turn state
-│   ├── Lab4_Graphs_Cycles_Recovery.ipynb # LangGraph orchestration and recovery
-│   └── Lab5_LLM_as_Judge.ipynb           # Evaluation with LLM-as-judge
-└── domains/
-    ├── eop/                          # Evidence-Oriented Programming
-    │   ├── Lab_EOP1_Evidence_Chain_Extraction.ipynb
-    │   ├── Lab_EOP2_Claim_Contingent_Disclosure.ipynb
-    │   └── Lab_EOP3_EOP_Spokesperson.ipynb
-    ├── healthcare/                   # Healthcare AI
-    │   ├── Lab_HC1_Clinical_NLP_Agent.ipynb
-    │   ├── Lab_HC2_Medical_Literature_Agent.ipynb
-    │   └── Lab_HC3_Clinical_Trial_Assistant.ipynb
-    └── bioinformatics/               # Bioinformatics AI
-        ├── Lab_BIO1_Sequence_Analysis_Agent.ipynb
-        ├── Lab_BIO2_Variant_Interpretation.ipynb
-        └── Lab_BIO3_Pathway_Analysis_Agent.ipynb
+agentic-ai-playbook/
+├── README.md
+├── requirements.txt
+├── agent_utils.py                            # Shared client setup and helpers
+├── Lab0_Agent_Prototype.ipynb                # Build a minimal agent from scratch
+├── Lab1_Anatomy_of_a_Decision.ipynb          # Prompt structure and tool selection
+├── Lab2_Contract_of_a_Tool.ipynb             # Pydantic schemas for tool calls
+├── Lab3_Persistent_Agent.ipynb               # Memory and multi-turn state
+├── Lab4_Graphs_Cycles_Recovery.ipynb         # LangGraph orchestration and recovery
+├── Lab5_LLM_as_Judge.ipynb                   # Evaluation with LLM-as-judge
+├── Lab6_AI_CoScientist_MultiAgent.ipynb      # Multi-agent scientific collaboration
+├── Lab_EOP1_Evidence_Chain_Extraction.ipynb   # EOP domain
+├── Lab_EOP2_Claim_Contingent_Disclosure.ipynb
+├── Lab_EOP3_EOP_Spokesperson.ipynb
+├── Lab_HC1_Clinical_NLP_Agent.ipynb          # Healthcare domain
+├── Lab_HC2_Medical_Literature_Agent.ipynb
+├── Lab_HC3_Clinical_Trial_Assistant.ipynb
+├── Lab_BIO1_Sequence_Analysis_Agent.ipynb    # Bioinformatics domain
+├── Lab_BIO2_Variant_Interpretation.ipynb
+├── Lab_BIO3_Pathway_Analysis_Agent.ipynb
+├── Lab_FIN1_Financial_Analysis_Agent.ipynb   # Finance domain
+├── Lab_Scenarios_AI_Agent_Research.ipynb      # Cross-domain scenario exercises
+├── Agentic_AI_Science_Playbook.pptx          # Slide deck
+├── generate_playbook_deck.py                 # Script to regenerate slides
+├── generate_overview_deck.py                 # Script to generate overview deck
+└── Playbook_Team_Overview.pptx               # Team overview deck
 ```
 
 ---
@@ -57,13 +57,13 @@ agentic-ai-science-playbook/
 
 ### Path A: Agent Engineering Fundamentals (any domain)
 
-Start here if you want the core engineering patterns. All six foundation labs are domain-agnostic.
+Start here if you want the core engineering patterns. All foundation labs are domain-agnostic.
 
 ```
 Lab 0 (optional warm-up)
     |
-Lab 1 --> Lab 2 --> Lab 3 --> Lab 4 --> Lab 5
-(prompt)  (schema) (memory) (graph)  (eval)
+Lab 1 --> Lab 2 --> Lab 3 --> Lab 4 --> Lab 5 --> Lab 6
+(prompt)  (schema) (memory) (graph)  (eval)   (multi-agent)
 ```
 
 ### Path B: AI for Environmental / Computational Science
@@ -71,7 +71,7 @@ Lab 1 --> Lab 2 --> Lab 3 --> Lab 4 --> Lab 5
 Best for PhD students in computational science, physics, or climate research.
 
 ```
-Foundation Labs 0-4
+Foundation Labs 0-5
     |
 EOP1 --> EOP2 --> EOP3
 ```
@@ -81,7 +81,7 @@ EOP1 --> EOP2 --> EOP3
 Best for biomedical informatics, clinical research, or health tech developers.
 
 ```
-Foundation Labs 0-4
+Foundation Labs 0-5
     |
 HC1 --> HC2 --> HC3
 ```
@@ -91,21 +91,33 @@ HC1 --> HC2 --> HC3
 Best for genomics, proteomics, or systems biology researchers.
 
 ```
-Foundation Labs 0-4
+Foundation Labs 0-5
     |
 BIO1 --> BIO2 --> BIO3
 ```
 
-### Path E: Cross-Domain (Full Playbook)
+### Path E: AI for Finance
+
+Best for quantitative analysts, risk managers, or fintech developers.
+
+```
+Foundation Labs 0-5
+    |
+FIN1
+```
+
+### Path F: Cross-Domain (Full Playbook)
 
 For those who want a complete picture across all scientific domains.
 
 ```
-Foundation: Lab 0 --> Lab 1 --> Lab 2 --> Lab 3 --> Lab 4 --> Lab 5
-                                                               |
-                                              ┌────────────────┼────────────────┐
-                                              |                |                |
-                                          EOP1-3           HC1-3           BIO1-3
+Foundation: Lab 0 --> Lab 1 --> Lab 2 --> Lab 3 --> Lab 4 --> Lab 5 --> Lab 6
+                                                                         |
+                                              ┌──────────┬──────────┬────┴─────┐
+                                              |          |          |          |
+                                          EOP1-3     HC1-3     BIO1-3      FIN1
+                                                                  |
+                                                            Scenarios Lab
 ```
 
 ---
@@ -122,6 +134,7 @@ Foundation: Lab 0 --> Lab 1 --> Lab 2 --> Lab 3 --> Lab 4 --> Lab 5
 | Lab 3 | Persistent Agent — memory and state | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab3_Persistent_Agent.ipynb) |
 | Lab 4 | Graphs, Cycles & Recovery — LangGraph | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab4_Graphs_Cycles_Recovery.ipynb) |
 | Lab 5 | LLM-as-Judge — evaluation patterns | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab5_LLM_as_Judge.ipynb) |
+| Lab 6 | AI CoScientist — multi-agent collaboration | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab6_AI_CoScientist_MultiAgent.ipynb) |
 
 ### EOP Domain
 
@@ -147,6 +160,17 @@ Foundation: Lab 0 --> Lab 1 --> Lab 2 --> Lab 3 --> Lab 4 --> Lab 5
 | BIO 2 | Variant Interpretation — genomic variant analysis | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_BIO2_Variant_Interpretation.ipynb) |
 | BIO 3 | Pathway Analysis Agent — gene ontology and pathways | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_BIO3_Pathway_Analysis_Agent.ipynb) |
 
+### Finance Domain
+
+| Lab | Description | Open |
+|-----|-------------|------|
+| FIN 1 | Financial Analysis Agent — portfolio and risk | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_FIN1_Financial_Analysis_Agent.ipynb) |
+
+### Cross-Domain
+
+| Lab | Description | Open |
+|-----|-------------|------|
+| Scenarios | AI Agent Research Scenarios | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/virginiakm1988/agentic-ai-playbook/blob/master/Lab_Scenarios_AI_Agent_Research.ipynb) |
 
 ---
 
@@ -160,6 +184,7 @@ Foundation: Lab 0 --> Lab 1 --> Lab 2 --> Lab 3 --> Lab 4 --> Lab 5
 | **Lab 3** | Persistent agent | Conversation history and external memory for multi-turn coherence |
 | **Lab 4** | Graphs, cycles & recovery | LangGraph state machines for orchestrated, recoverable workflows |
 | **Lab 5** | LLM-as-judge | Automated evaluation of agent output quality |
+| **Lab 6** | AI CoScientist | Multi-agent collaboration for scientific research |
 
 ## Domain Labs — Summary
 
@@ -187,6 +212,12 @@ Foundation: Lab 0 --> Lab 1 --> Lab 2 --> Lab 3 --> Lab 4 --> Lab 5
 | **BIO 2** | Classify genomic variants (SNPs, indels); assess pathogenicity with evidence |
 | **BIO 3** | Pathway enrichment from gene lists; identify drug targets and build interaction networks |
 
+### Finance
+
+| Lab | Core Skill |
+|-----|-----------|
+| **FIN 1** | Portfolio analysis, risk-return profiling, Sharpe ratio, and ESG evaluation |
+
 ---
 
 ## Technical Stack
@@ -209,18 +240,15 @@ Foundation: Lab 0 --> Lab 1 --> Lab 2 --> Lab 3 --> Lab 4 --> Lab 5
 | AI/ML | None for Labs 0-2; helpful from Lab 3 onward |
 | Domain knowledge | None required — each domain lab includes background |
 
-See [GETTING_STARTED.md](GETTING_STARTED.md) for setup instructions.
-
 ---
 
 ## Contributing
 
-Domain labs are designed to be self-contained. To add a new domain:
+To add a new domain:
 
-1. Create `domains/<your_domain>/` directory
-2. Add `Lab_<DOMAIN>1_...ipynb`, `Lab_<DOMAIN>2_...ipynb`, `Lab_<DOMAIN>3_...ipynb`
-3. Follow the lab template structure (Setup → Background → Tools → Experiments → Summary)
-4. Add your domain to the README tables
+1. Add `Lab_<DOMAIN>1_...ipynb`, `Lab_<DOMAIN>2_...ipynb`, etc.
+2. Follow the lab template structure (Setup → Background → Tools → Experiments → Summary)
+3. Add your domain to the README tables
 
 ---
 
